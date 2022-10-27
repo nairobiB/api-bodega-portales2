@@ -9,5 +9,5 @@ require_once('vistas/plantilla/js.php');
 require_once('vistas/plantilla/fin.php');
 
 class Opcion{
-    public opcion = 1;
+    public $opcion = 1;
 }

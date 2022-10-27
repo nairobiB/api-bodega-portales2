@@ -10,8 +10,8 @@
 			<nav id="nav">
 				<ul>
 					<?php
-					posicion = new Opcion();
-					if (posicion == 1) {?>
+					$posicion = new Opcion();
+					if ($posicion == 1) {?>
 						<li class="current"><a href="index.php">Inicio</a></li>
 					<?php}?>
 					<li>
