@@ -9,7 +9,7 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-				<li><a href="index.php">Inicio</a></li>
+				<li class="current"><a href="index.php">Inicio</a></li>
 					<li>
 						<a href="#">Opciones</a>
 						<ul>
@@ -29,12 +29,7 @@
 							<li><a href="#">Veroeros feugiat</a></li>
 						</ul>
 					</li>
-					<?php
-					private $posicion;
-					$this->posicion = new Opcion();
-					if ($posicion == 1) {?>
-						<li class="current"><a href="left-sidebar.html">Productos</a></li>
-					<?php } ?>
+					<li><a href="left-sidebar.html">Productos</a></li>
 					<li><a href="right-sidebar.html">Right Sidebar</a></li>
 					<li><a href="two-sidebar.html">Two Sidebar</a></li>
 					<li><a href="no-sidebar.html">No Sidebar</a></li>
