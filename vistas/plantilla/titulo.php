@@ -7,6 +7,6 @@
 
             <article>
                 <header>
-                    <h2>No Sidebar</h2>
+                    <h2><?php echo $this->titulo ?></h2>
                     <p>All content, all the time.</p>
                 </header>

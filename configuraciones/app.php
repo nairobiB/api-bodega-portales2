@@ -4,7 +4,7 @@ class App
     function __construct()
     {
 
-        $url = $_GET['url']; //captura el url
+        //$url = $_GET['url']; //captura el url
 
         if (empty($url)) {
             require_once('controladores/inicio.php');
