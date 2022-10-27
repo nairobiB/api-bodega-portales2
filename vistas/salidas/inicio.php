@@ -8,7 +8,7 @@ require_once('vistas/plantilla/titulo.php');
 
 
 
-<h3>INICIO</h3>
+<h3>SALIDAS</h3>
 
 </article>
 
@@ -20,4 +20,3 @@ require_once('vistas/plantilla/pie.php');
 require_once('vistas/plantilla/js.php');
 require_once('vistas/plantilla/fin.php');
 ?>
-
