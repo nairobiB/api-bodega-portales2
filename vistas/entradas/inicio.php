@@ -8,7 +8,7 @@ require_once('vistas/plantilla/titulo.php');
 
 
 
-<h3>SALIDAS</h3>
+<h3>ENTRADAS</h3>
 
 </article>
 

@@ -1,5 +1,4 @@
 <?php
-
 require_once('configuraciones/basedatos.php');
 require_once('configuraciones/controladorBase.php');
 require_once('configuraciones/modeloBase.php');

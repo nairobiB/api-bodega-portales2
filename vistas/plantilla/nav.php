@@ -9,16 +9,16 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-				<li class="current"><a href="index.php">Inicio</a></li>
+					<li class="current"><a href="index.php">Inicio</a></li>
 					<li>
-						<a href="#">Entradas</a>
+						<a href="/api-bodega-portales/entradas">Entradas</a>
 						<ul>
 							<li><a href="#">Listar</a></li>
 							<!--<li><a href="#">Agregar</a></li>-->
 						</ul>
 					</li>
 					<li>
-						<a href="/salidas">Salidas</a>
+						<a href="/api-bodega-portales/salidas">Salidas</a>
 						<ul>
 							<li><a href="#">Listar</a></li>
 							<!--<li><a href="#">Agregar</a></li>-->
