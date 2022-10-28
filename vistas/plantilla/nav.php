@@ -31,6 +31,13 @@
 							<li><a href="#">Agregar</a></li>
 						</ul>
 					</li>
+					<li>
+						<a href="/api-bodega-portales/personal">Personal</a>
+						<ul>
+							<li><a href="#">Listar</a></li>
+							<li><a href="#">Agregar</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
 

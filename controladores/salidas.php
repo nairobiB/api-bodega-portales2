@@ -11,7 +11,6 @@ class salidas extends Controlador
     {
         $this->vista->titulo = 'Pagina de Salidas';
         $this->vista->url = 'salidas/inicio';
-        $this->vista->current = 'current';
         $this->vista->render($this->vista->url);
     }
 }
