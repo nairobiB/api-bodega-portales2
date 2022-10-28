@@ -10,7 +10,7 @@ class entradasModelo extends Modelo
     {
         $lista = [];
         try {
-            $sql = "select IdCompra, Fechaentrada, IdProv, NomUsr from entradas";
+            $sql = "select IdCompra, Fechaentrada, IdProv, NomUsr, Estado from entradas";
             $datos = $this->db->conectar()->query($sql); //capturan los datos que resultan del pdo, llama a la conexion db que esta en modelo base
             foreach ($datos as $f) {
                 $entrada = [

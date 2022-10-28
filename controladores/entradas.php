@@ -11,6 +11,8 @@ class entradas extends Controlador
     {
         $this->vista->titulo = 'Pagina de Entradas';
         $this->vista->url = 'entradas/inicio';
-        $this->vista->render($this->vista->url);
+        $this->setModelo('entradas');
+        $this->vista->datos = $this->modelo->listar();
+        $this->vista->render($this->vista->url); //llama a la vista
     }
 }
