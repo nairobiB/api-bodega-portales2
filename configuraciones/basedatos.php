@@ -12,10 +12,10 @@ class BaseDatos
     function __construct()
     {
         //define los parametros
-        $this->host = '192.168.0.100'; //se coloca la ip del servidor de la bd
-        $this->db = 'portales';
-        $this->usuario = 'naibodden';
-        $this->contrasena = 'Portales2!';
+        $this->host = 'localhost'; //se coloca la ip del servidor de la bd
+        $this->db = 'bodegajn';
+        $this->usuario = 'portales';
+        $this->contrasena = 'portales2';
         $this->caracteres = 'utf8'; //codificacion de caracteres
 
     }

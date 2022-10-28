@@ -14,21 +14,21 @@
 						<a href="/api-bodega-portales/entradas">Entradas</a>
 						<ul>
 							<li><a href="#">Listar</a></li>
-							<!--<li><a href="#">Agregar</a></li>-->
+							<li><a href="#">Agregar</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href="/api-bodega-portales/salidas">Salidas</a>
 						<ul>
 							<li><a href="#">Listar</a></li>
-							<!--<li><a href="#">Agregar</a></li>-->
+							<li><a href="#">Agregar</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="#">Productos</a>
+						<a href="/api-bodega-portales/productos">Productos</a>
 						<ul>
 							<li><a href="#">Listar</a></li>
-							<!--<li><a href="#">Agregar</a></li>-->
+							<li><a href="#">Agregar</a></li>
 						</ul>
 					</li>
 				</ul>
