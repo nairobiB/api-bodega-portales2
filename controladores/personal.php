@@ -1,6 +1,6 @@
 <?php
 
-class salidas extends Controlador
+class personal extends Controlador
 {
     function __construct()
     {
@@ -9,8 +9,8 @@ class salidas extends Controlador
     }
     function inicio()
     {
-        $this->vista->titulo = 'Pagina de Salidas';
-        $this->vista->url = 'salidas/inicio';
+        $this->vista->titulo = 'Pagina de Personal';
+        $this->vista->url = 'personal/inicio';
         $this->vista->render($this->vista->url);
     }
 }
