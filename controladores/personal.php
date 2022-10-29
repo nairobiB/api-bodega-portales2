@@ -11,6 +11,8 @@ class personal extends Controlador
     {
         $this->vista->titulo = 'Pagina de Personal';
         $this->vista->url = 'personal/inicio';
-        $this->vista->render($this->vista->url);
+        $this->setModelo('personal');
+        $this->vista->datos = $this->modelo->listar();
+        $this->vista->render($this->vista->url); //llama a la vista
     }
 }
