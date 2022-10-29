@@ -27,7 +27,7 @@ require_once('vistas/plantilla/titulo.php');
             <tr>
                 <th scope="row"><a href=""><?php echo $f['Codsalida']; ?></a>
                 </th>
-                <td><?php echo $f['Fechaventa']; ?>
+                <td><?php echo $f['FechaVenta']; ?>
                 </td>
                 <td><?php echo $f['NomUsr']; ?>
                 </td>
