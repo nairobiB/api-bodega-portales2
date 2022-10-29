@@ -10,7 +10,7 @@ class personalModelo extends Modelo
     {
         $lista = [];
         try {
-            $sql = "select IdPer, TelPer, NomPer, ApePer, DirPer, Email, Estado, fecha_nacimiento from personal";
+            $sql = "select IdPer, TelPer, NomPer, ApePer, DirPer, Email, Estado, fecha_nacimineto from personal";
             $datos = $this->db->conectar()->query($sql); //capturan los datos que resultan del pdo, llama a la conexion db que esta en modelo base
             foreach ($datos as $f) {
                 $personal = [ 
@@ -21,7 +21,7 @@ class personalModelo extends Modelo
                     'DirPer' => $f['DirPer'],
                     'Email' => $f['Email'],
                     'Estado' => $f['Estado'],
-                    'fecha_nacimiento' => $f['fecha_nacimiento'],
+                    'fecha_nacimineto' => $f['fecha_nacimineto']
                 ];
                 array_push($lista, $personal);
             }
