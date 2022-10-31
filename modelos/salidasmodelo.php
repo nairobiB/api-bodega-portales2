@@ -10,7 +10,7 @@ class salidasModelo extends Modelo
     {
         $lista = [];
         try {
-            $sql = "select Codsalida, FechaVenta, NomUsr from salidas";
+            $sql = "select Codsalida, FechaVenta, NomUsr from salida";
             $datos = $this->db->conectar()->query($sql); //capturan los datos que resultan del pdo, llama a la conexion db que esta en modelo base
             foreach ($datos as $f) {
                 $salida = [
