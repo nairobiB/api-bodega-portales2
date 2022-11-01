@@ -10,7 +10,7 @@ class productosModelo extends Modelo
     {
         $lista = [];
         try {
-            $sql = "select IdProd, NomProd, PrecProd, PrecCompra, stock, Descripcion, IdProv, Estado, IdCat, FehaCad, numero_lote, IdSucursal from productos";
+            $sql = "select IdProd, NomProd, PrecProd, PrecCompra, stock, Descripcion, IdProv, Estado, IdCat, FechaCad, numero_lote, IdSucursal from productos";
             $datos = $this->db->conectar()->query($sql); //capturan los datos que resultan del pdo, llama a la conexion db que esta en modelo base
             foreach ($datos as $f) {
                 $producto = [
@@ -23,7 +23,7 @@ class productosModelo extends Modelo
                     'IdProv' => $f['IdProv'],
                     'Estado' => $f['Estado'],
                     'IdCat' => $f['IdCat'],
-                    'FehaCad' => $f['FehaCad'],
+                    'FechaCad' => $f['FechaCad'],
                     'numero_lote' => $f['numero_lote'],
                     'IdSucursal' => $f['IdSucursal'],
                 ];

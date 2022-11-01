@@ -52,7 +52,7 @@ require_once('vistas/plantilla/titulo.php');
                 </td>
                 <td><?php echo $f['IdCat']; ?>
                 </td>
-                <td><?php echo $f['FehaCad']; ?>
+                <td><?php echo $f['FechaCad']; ?>
                 </td>
                 <td><?php echo $f['numero_lote']; ?>
                 </td>
