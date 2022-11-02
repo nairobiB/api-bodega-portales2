@@ -38,6 +38,13 @@
 							<li><a href="#">Agregar</a></li>
 						</ul>
 					</li>
+					<li>
+						<a href="/api-bodega-portales/sucursales">Sucursales</a>
+						<ul>
+							<li><a href="#">Listar</a></li>
+							<li><a href="#">Agregar</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
 

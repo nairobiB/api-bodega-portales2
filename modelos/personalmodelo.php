@@ -13,7 +13,7 @@ class personalModelo extends Modelo
             $sql = "select IdPer, TelPer, NomPer, ApePer, DirPer, Email, Estado, fecha_nacimineto from personal";
             $datos = $this->db->conectar()->query($sql); //capturan los datos que resultan del pdo, llama a la conexion db que esta en modelo base
             foreach ($datos as $f) {
-                $personal = [ 
+                $personal = [
                     'IdPer' => $f['IdPer'],
                     'TelPer' => $f['TelPer'],
                     'NomPer' => $f['NomPer'],
