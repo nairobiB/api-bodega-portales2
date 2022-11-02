@@ -7,7 +7,7 @@ require_once('vistas/plantilla/titulo.php');
 
 
 
-
+<p>Módulo de gestión de <?php echo $this->titulo ?></p>
 <h3>PERSONAL</h3>
 
 </article>

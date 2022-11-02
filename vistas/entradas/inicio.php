@@ -7,7 +7,7 @@ require_once('vistas/plantilla/titulo.php');
 
 
 
-
+<p>Módulo de gestión de <?php echo $this->titulo ?></p>
 <h3>ENTRADAS</h3>
 
 </article>
@@ -65,6 +65,36 @@ require_once('vistas/plantilla/titulo.php');
                 </td>
                 <td><?php echo $f2['Precio']; ?>
                 </td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary">Mod</button>
+                        <button type="button" class="btn btn-warning">Del</button>
+                    </div>
+                </td>
+            </tr>
+        <?php } ?>
+    </tbody>
+
+</table>
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre Categoria</th>
+            <th scope="col">Acción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        foreach ($this->datoscate as $f3) {
+        ?>
+            <tr>
+                <th scope="row"><a href=""><?php echo $f3['IdCat']; ?></a>
+                </th>
+
+                <td><?php echo $f3['NombreCat']; ?>
+                </td>
+
                 <td>
                     <div class="btn-group" role="group">
                         <button type="button" class="btn btn-primary">Mod</button>

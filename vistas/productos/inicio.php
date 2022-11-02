@@ -7,7 +7,7 @@ require_once('vistas/plantilla/titulo.php');
 
 
 
-
+<p>Módulo de gestión de <?php echo $this->titulo ?></p>
 <h3>Productos</h3>
 
 </article>
@@ -25,6 +25,8 @@ require_once('vistas/plantilla/titulo.php');
             <th scope="col">Fecha de Caducidad</th>
             <th scope="col">Numero de Lote</th>
             <th scope="col">ID de Sucursal</th>
+            <th scope="col">Acción</th>
+
 
         </tr>
     </thead>
@@ -33,7 +35,7 @@ require_once('vistas/plantilla/titulo.php');
         foreach ($this->datos as $f) {
         ?>
             <tr>
- 
+
                 <td><?php echo $f['IdProd']; ?>
                 </td>
                 <td><?php echo $f['NomProd']; ?>
@@ -48,8 +50,7 @@ require_once('vistas/plantilla/titulo.php');
                 </td>
                 <td><?php echo $f['IdProv']; ?>
                 </td>
-                <td><?php echo $f['Estado']; ?>
-                </td>
+
                 <td><?php echo $f['IdCat']; ?>
                 </td>
                 <td><?php echo $f['FechaCad']; ?>

@@ -12,7 +12,7 @@ class entradasModelo extends Modelo
         try {
             $sql = "select IdCompra, Fechaentrada, IdProv, NomUsr, Estado from entradas";
             $datos = $this->db->conectar()->query($sql); //capturan los datos que resultan del pdo, llama a la conexion db que esta en 
-            
+
             foreach ($datos as $f) {
                 $entrada = [
                     'IdCompra' => $f['IdCompra'],
@@ -43,6 +43,26 @@ class entradasModelo extends Modelo
                 array_push($lista2, $entradadetalle);
             }
             return $lista2;
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
+    }
+    function listarcategorias()
+    {
+        $lista3 = [];
+        try {
+            $sql3 = "select IdCat, NombreCat, Estado from categorias";
+            $datoscate = $this->db->conectar()->query($sql3);
+            foreach ($datoscate as $f2) {
+                $categoria = [
+                    'IdCat' => $f2['IdCat'],
+                    'NombreCat' => $f2['NombreCat'],
+                    'Estado' => $f2['Estado'],
+
+                ];
+                array_push($lista3, $categoria);
+            }
+            return $lista3;
         } catch (\Throwable $th) {
             //throw $th;
         }

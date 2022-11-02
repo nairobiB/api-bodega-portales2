@@ -8,5 +8,6 @@
             <article>
                 <header>
                     <h2><?php echo $this->titulo ?></h2>
-                    <p>All content, all the time.</p>
+                    <br>
+
                 </header>
