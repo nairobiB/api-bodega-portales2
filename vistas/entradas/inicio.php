@@ -42,6 +42,7 @@ require_once('vistas/plantilla/titulo.php');
     </tbody>
 
 </table>
+<h3>DETALLE ENTRADAS</h3>
 <table class="table table-bordered">
     <thead class="thead-dark">
         <tr>
@@ -76,6 +77,7 @@ require_once('vistas/plantilla/titulo.php');
     </tbody>
 
 </table>
+<h3>CATEGORIAS</h3>
 <table class="table table-bordered">
     <thead class="thead-dark">
         <tr>

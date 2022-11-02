@@ -41,7 +41,7 @@ require_once('vistas/plantilla/titulo.php');
     </tbody>
 
 </table>
-
+<h3>DETALLE SALIDAS</h3>
 <table class="table">
     <thead class="thead-dark">
         <tr>

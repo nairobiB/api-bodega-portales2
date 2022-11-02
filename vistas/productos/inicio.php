@@ -7,7 +7,7 @@ require_once('vistas/plantilla/titulo.php');
 
 
 
-
+<p>Módulo de gestión de <?php echo $this->titulo ?></p>
 <h3>Productos</h3>
 
 </article>
@@ -25,6 +25,7 @@ require_once('vistas/plantilla/titulo.php');
             <th scope="col">Fecha de Caducidad</th>
             <th scope="col">Numero de Lote</th>
             <th scope="col">ID de Sucursal</th>
+            <th scope="col">Acción</th>
 
         </tr>
     </thead>
@@ -67,7 +68,7 @@ require_once('vistas/plantilla/titulo.php');
         <?php } ?>
     </tbody>
 </table>
-
+<h3>PROVEEDORES</h3>
 <table class="table">
     <thead class="thead-dark">
         <tr>
@@ -75,7 +76,7 @@ require_once('vistas/plantilla/titulo.php');
             <th scope="col">Nombre del Proveedor</th>
             <th scope="col">Telefono</th>
             <th scope="col">Direccion</th>
-            <th scope="col">Estado</th>
+
             <th scope="col">Email</th>
             <th scope="col">Accion</th>
 
@@ -92,7 +93,7 @@ require_once('vistas/plantilla/titulo.php');
                 </td>
                 <td><?php echo $f['Telproveedor']; ?>
                 </td>
-                <td><?php echo $f['Estado']; ?>
+                <td><?php echo $f['Dirproveedor']; ?>
                 </td>
                 <td><?php echo $f['email']; ?>
                 </td>
