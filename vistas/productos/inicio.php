@@ -7,14 +7,14 @@ require_once('vistas/plantilla/titulo.php');
 
 
 
-<p>Módulo de gestión de <?php echo $this->titulo ?></p>
+
 <h3>Productos</h3>
 
 </article>
 <table class="table">
     <thead class="thead-dark">
         <tr>
-            <th scope="col">ID</th>
+            <th scope="col">#</th>
             <th scope="col">Nombre</th>
             <th scope="col">Precio</th>
             <th scope="col">Precio de Compra</th>
@@ -25,8 +25,6 @@ require_once('vistas/plantilla/titulo.php');
             <th scope="col">Fecha de Caducidad</th>
             <th scope="col">Numero de Lote</th>
             <th scope="col">ID de Sucursal</th>
-            <th scope="col">Acción</th>
-
 
         </tr>
     </thead>
@@ -58,6 +56,45 @@ require_once('vistas/plantilla/titulo.php');
                 <td><?php echo $f['numero_lote']; ?>
                 </td>
                 <td><?php echo $f['IdSucursal']; ?>
+                </td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary">Mod</button>
+                        <button type="button" class="btn btn-warning">Del</button>
+                    </div>
+                </td>
+            </tr>
+        <?php } ?>
+    </tbody>
+</table>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre del Proveedor</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Email</th>
+            <th scope="col">Accion</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        foreach ($this->datosproveedor as $f) {
+        ?>
+            <tr>
+                <td><?php echo $f['IdProv']; ?>
+                </td>
+                <td><?php echo $f['Nomproveedor']; ?>
+                </td>
+                <td><?php echo $f['Telproveedor']; ?>
+                </td>
+                <td><?php echo $f['Estado']; ?>
+                </td>
+                <td><?php echo $f['email']; ?>
                 </td>
                 <td>
                     <div class="btn-group" role="group">
