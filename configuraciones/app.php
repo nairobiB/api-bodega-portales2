@@ -4,9 +4,13 @@ class App
     function __construct()
     {
 
-        $url = $_GET['url']; //captura el url
+        //$url = $_POST['url']; //captura el url
+        if(isset($_GET['url'])){
+            $url = $_GET['url'];
+
 
         if (empty($url)) {
+
             require_once('controladores/inicio.php');
             $controlador = new inicio();
             $controlador->inicio(); //nos carga esto, el metodo, el controlador en el inicio de controlador
@@ -20,7 +24,7 @@ class App
 
                 if (isset($url[1])) { //verifica que existe el metodo si es que hay
                     try {
-                        $controlador->$url[1];
+                        $controlador->{$url[1]}();
                     } catch (\Throwable $th) {
                         var_dump($th);
                     }
@@ -29,11 +33,12 @@ class App
                     $controlador->inicio(); //este controlador es el que se carga en $archivoControlador
 
                 }
-            } /*else {
+            } else {
                 require_once('controladores/error.php');
                 $controlador = new er();
                 $controlador->er();
-            }*/
+            }
         }
     }
+}
 }

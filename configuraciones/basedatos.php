@@ -28,7 +28,6 @@ class BaseDatos
                 PDO::ATTR_EMULATE_PREPARES => false,
             ];
 
-
             $pdo = new PDO($conexion, $this->usuario, $this->contrasena, $opciones);
             return $pdo;
         } catch (PDOException $e) {
