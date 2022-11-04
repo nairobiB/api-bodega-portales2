@@ -7,7 +7,7 @@ require_once('vistas/plantilla/titulo.php');
 
 
 
-
+<p>Módulo de gestión de <?php echo $this->titulo ?></p>
 <h3>PERSONAL</h3>
 
 </article>
@@ -57,6 +57,48 @@ require_once('vistas/plantilla/titulo.php');
     </tbody>
 
 </table>
+<h3>USUARIOS</h3>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Usuario</th>
+            <th scope="col">Contraseña</th>
+            <th scope="col">#</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Nivel</th>
+            <th scope="col">ID de Sucursal</th>
+            <th scope="col">Accion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        foreach ($this->datosusuario as $f) {
+        ?>
+            <tr>
+                <th scope="row"><a href=""><?php echo $f['NomUsr']; ?></a>
+                </th>
+                <td><?php echo $f['Contra']; ?>
+                </td>
+                <td><?php echo $f['IdPer']; ?>
+                </td>
+                <td><?php echo $f['Estado']; ?>
+                </td>
+                <td><?php echo $f['nivel']; ?>
+                </td>
+                <td><?php echo $f['IdSucursal']; ?>
+                </td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary">Mod</button>
+                        <button type="button" class="btn btn-warning">Del</button>
+                    </div>
+                </td>
+            </tr>
+        <?php } ?>
+    </tbody>
+
+</table>
+
 </div>
 </div>
 </section>
