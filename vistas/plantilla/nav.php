@@ -9,7 +9,7 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li class="current"><a href="/api-bodega-portales/inicio">Inicio</a></li>
+					<li><a href="/api-bodega-portales/inicio">Inicio</a></li>
 					<li>
 						<a href="/api-bodega-portales/entradas">Entradas</a>
 						<ul>
