@@ -14,7 +14,7 @@
 						<a href="/api-bodega-portales/entradas">Entradas</a>
 						<ul>
 							<li><a href="/api-bodega-portales/entradas">Listar</a></li>
-							<li><a href="#">Agregar</a></li>
+							<li><a href="/api-bodega-portales/entradadetalle">Agregar</a></li>
 						</ul>
 					</li>
 					<li>

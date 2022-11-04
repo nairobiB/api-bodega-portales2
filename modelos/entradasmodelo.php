@@ -67,4 +67,9 @@ class entradasModelo extends Modelo
             //throw $th;
         }
     }
+    public function agregar($datos)
+    {
+        $query = $this->db->conectar()->prepare('insert into entradas (Fechaentrada, IdProv, NomUsr) value(:fecha, :prov, :usuario)');
+        $query->execute($datos);
+    }
 }
