@@ -21,14 +21,13 @@ class entradadetalle extends Controlador
     {
         try {
             $fecha = $_POST['fecha'];
-            $prov = $_POST['prov'];
+            $proveedor = $_POST['proveedor'];
             $usuario = $_POST['usuario'];
-            $this->setModelo('cargos');
-            $this->modelo->agregar(["fecha" => $fecha, "prov" => $prov, "usuario" => $usuario]);
-            header("Location: /cargos/", TRUE, 301);
-            exit();
+            $this->setModelo('entradas');
+            $this->modelo->guardar(["Fechaentrada" => $fecha, "IdProv" => $proveedor, "NomUsr" => $usuario]);
+            echo json_encode(array('success' => 1, 'msj' => 'Registro guardado'));
         } catch (\Throwable $th) {
-            var_dump($th);
+            echo json_encode(array('success' => 0, 'msj' => 'Error al guardar registro'));
         }
     }
 }
