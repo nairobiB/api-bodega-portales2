@@ -31,5 +31,3 @@ if($filas>0){
 }
 mysqli_free_result($Resultado);
 mysqli_close($conn);
-
-?>

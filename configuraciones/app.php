@@ -11,8 +11,8 @@ class App
 
             if (empty($url)) {
 
-                require_once('controladores/inicio.php');
-                $controlador = new inicio();
+                require_once('controladores/login.php');
+                $controlador = new login();
                 $controlador->inicio(); //nos carga esto, el metodo, el controlador en el inicio de controlador
             } else {
                 $url = rtrim($url, '/'); //captura lo que esta entre plecas, lo divide y elimina las plecas, como un arreglo la primera parte es el controlador y la segunda parte es el metodo
