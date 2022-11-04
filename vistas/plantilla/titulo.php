@@ -5,9 +5,9 @@
 
             <!-- Content -->
 
-            <article>
-                <header>
-                    <h2><?php echo $this->titulo ?></h2>
-                    <br>
 
-                </header>
+            <header>
+                <h2><?php echo $this->titulo ?></h2>
+                <br>
+
+            </header>

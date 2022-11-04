@@ -21,7 +21,7 @@
     fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
     Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
     Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
-</article>
+
 
 </div>
 </div>
