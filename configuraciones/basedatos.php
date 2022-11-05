@@ -15,7 +15,7 @@ class BaseDatos
         $this->host = 'localhost'; //se coloca la ip del servidor de la bd
         $this->db = 'bodegajn';
         $this->usuario = 'portales';
-        $this->contrasena = 'portales2';
+        $this->contrasena = 'Portales2.';
         $this->caracteres = 'utf8'; //codificacion de caracteres
 
     }

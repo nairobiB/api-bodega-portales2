@@ -20,9 +20,10 @@ class entradadetalle extends Controlador
     function guardar()
     {
         try {
-            $fecha = $_POST['fecha'];
-            $proveedor = $_POST['proveedor'];
-            $usuario = $_POST['usuario'];
+            print_r($_POST);
+            $fecha = $_POST['Fechaentrada'];
+            $proveedor = $_POST['IdProv'];
+            $usuario = $_POST['NomUsr'];
             $this->setModelo('entradas');
             $this->modelo->guardar(["Fechaentrada" => $fecha, "IdProv" => $proveedor, "NomUsr" => $usuario]);
             echo json_encode(array('success' => 1, 'msj' => 'Registro guardado'));

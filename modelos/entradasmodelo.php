@@ -69,7 +69,7 @@ class entradasModelo extends Modelo
     }
     public function guardar($datos)
     {
-        $query = $this->db->conectar()->prepare('insert into entradas (Fechaentrada, IdProv, NomUsr) value(:fecha, :proveedor, :usuario)');
+        $query = $this->db->conectar()->prepare('insert into entradas (Fechaentrada, IdProv, NomUsr) value(:Fechaentrada, :IdProv, :NomUsr)');
         $query->execute($datos);
     }
 }
