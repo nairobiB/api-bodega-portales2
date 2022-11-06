@@ -5,4 +5,4 @@ require_once('configuraciones/modeloBase.php');
 require_once('configuraciones/vistaBase.php');
 require_once('configuraciones/app.php');
 $app = new App();
-//cambio en el index en rama de dev
+//cambio en el index en rama de dev a
